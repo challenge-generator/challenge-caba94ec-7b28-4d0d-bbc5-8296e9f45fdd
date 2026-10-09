@@ -1,0 +1,87 @@
+# Archivos y directorios de Python que no deben incluirse en la imagen
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Entornos virtuales de Python
+venv/
+env/
+ENV/
+.venv
+
+# Archivos de Poetry
+poetry.lock
+
+# Archivos de configuración de desarrollo local
+.env
+.env.local
+.env.*.local
+*.local
+
+# Archivos de IDE y editor
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Archivos de Git
+.git/
+.gitignore
+.gitattributes
+
+# Documentación
+*.md
+docs/
+tutorial/
+
+# Tests
+tests/
+test_*.py
+*_test.py
+conftest.py
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+# Logs
+*.log
+logs/
+
+# Archivos temporales
+tmp/
+temp/
+.cache/
+
+# Archivos de infraestructura (se manejan externamente)
+docker-compose*.yml
+docker-compose*.yaml
+Dockerfile.dev
+
+# Certificados y claves (nunca incluir en imagen)
+*.pem
+*.key
+*.crt
+credentials.json
+*.credentials
